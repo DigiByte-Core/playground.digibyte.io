@@ -38,10 +38,10 @@ a:hover {
   color: #E7280A;
 }
 .link1 {
-  color: #ff9f00;
+  color: #0066cc;
 }
 .link1:hover {
-  color: #ff9f00;
+  color: #0066cc;
 }
 button,
 .button {
@@ -49,7 +49,7 @@ button,
 }
 input.ng-invalid {
   background-color: pink !important;
-  border: 1px dashed #ff9f00;
+  border: 1px dashed #0066cc;
 }
 input.ng-pristine {
   background-color: inherit !important;
@@ -85,7 +85,7 @@ code {
   background-color: #3A3A3A;
 }
 .bg-color-red1 {
-  background-color: #ff9f00;
+  background-color: #0066cc;
 }
 .bg-color-gray1 {
   background-color: #F6F6F6;
@@ -519,7 +519,7 @@ ul.menu {} .menu li {
 }
 .menu li a:hover,
 .menu li:hover a {
-  color: #ff9f00;
+  color: #0066cc;
 }
 .menu li:hover {
   background-color: #F6F6F6;
@@ -558,7 +558,7 @@ ul.menu {} .menu li {
   transition: 0.15s ease-out;
 }
 .button1:hover {
-  background-color: #ff9f00 !important;
+  background-color: #0066cc !important;
   color: #FFFFFF !important;
   border-style: none;
   -webkit-transition: background-color 300ms linear;
@@ -569,7 +569,7 @@ ul.menu {} .menu li {
 }
 .button1:focus {
   background-color: initial;
-  background-color: #ff9f00 !important;
+  background-color: #0066cc !important;
   color: #FFFFFF !important;
   border-style: none;
 }
@@ -700,7 +700,7 @@ a.share-link {
   border-right: 1px solid #F1EFEF;
 }
 .v-divider {
-  border-left: 1px solid #ff9f00;
+  border-left: 1px solid #0066cc;
 }
 .key-title {
   font-family: "Titillium Web";;
@@ -979,7 +979,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 .switch input:checked + label {
-  background: #ff9f00;
+  background: #0066cc;
 }
 .animate-enter,
 .animate-leave {
@@ -1018,5 +1018,5 @@ input[type=number] {
 
 .active {
   padding-bottom: 10px;
-  border-bottom: 4px solid #ff9f00;
+  border-bottom: 4px solid #0066cc;
 }
