@@ -23,16 +23,13 @@ angular.module('playApp.units', ['ngRoute'])
     var template;
     var templates = {
       BTC: 'var unit = new digibyte.Unit.fromBTC(@value);',
-      mBTC: 'var unit = new digibyte.Unit.fromMilis(@value);',
-      bits: 'var unit = new digibyte.Unit.fromBits(@value);',
-      satoshis: 'var unit = new digibyte.Unit.fromSatoshis(@value);',
     };
 
     if (templates[code]) {
       template = templates[code].replace('@value', value);
-      template += '\nvar rate = @rate; // @fiat/BTC exchange rate';
+      template += '\nvar rate = @rate; // @fiat/DGB exchange rate';
     } else {
-      template = 'var rate = @rate; // @fiat/BTC exchange rate\n';
+      template = 'var rate = @rate; // @fiat/DGB exchange rate\n';
       template += 'var unit = new digibyte.Unit.fromFiat(@value, rate);';
     }
     template = template.replace('@value', value);
@@ -40,7 +37,7 @@ angular.module('playApp.units', ['ngRoute'])
     template = template.replace('@fiat', fiat && fiat.code);
 
     var rate = $scope.currency ? $scope.currency.rate : 0;
-    template += "\nconsole.log('Units', unit.BTC, unit.mBTC, unit.bits, unit.satoshis, unit.atRate(rate));";
+    template += "\nconsole.log('Units', unit.DGB, unit.atRate(rate));";
     $scope.exampleCode = template;
   }
 
