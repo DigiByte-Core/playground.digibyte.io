@@ -12,7 +12,7 @@ var app = angular.module('playApp', [
 
 // Config
 app.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/units'});
+  $routeProvider.otherwise({redirectTo: '/address'});
 }]);
 app.constant('digibyte', require('digibyte'));
 
