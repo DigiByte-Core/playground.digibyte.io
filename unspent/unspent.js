@@ -47,7 +47,7 @@ angular.module('playApp.unspent', ['ngRoute'])
 
     $scope.loading = true;
     $scope.notFound = false;
-    client.getUnspentUtxos(address, onUTXOs);
+    client.getUtxos(address, onUTXOs);
 
     function onUTXOs(err, utxos) {
       $scope.loading = false;

@@ -14,7 +14,7 @@ angular.module('playApp.transaction', ['ngRoute'])
   $scope.digibyteURL = 'http://digibyte.io/guide/transaction.html';
   $scope.bitcoinURL = 'https://bitcoin.org/en/developer-guide#transactions';
   var explorers = require('digibyte-explorers');
-  var defaultLivenetAddress = '1PPQ2anP7DVWmeScdo8fCSTeWCpfBDFAhy';
+  var defaultLivenetAddress = 'DS5c434ap26oaerT7ECXrJtn71ukVeP3iC ';
   var defaultTestnetAddress = 'mfnUxBP3JjS4pU1kddzUshF8bcU7wF99mx';
   var _ = digibyte.deps._;
 
@@ -70,7 +70,7 @@ angular.module('playApp.transaction', ['ngRoute'])
     if (!digibyte.Address.isValid(address)) return; // mark as invalid
     
     $scope.loading = true;
-    client.getUnspentUtxos(address, onUTXOs);
+    client.getUtxos(address, onUTXOs);
     $scope.fromAddresses.push(address);
 
     function onUTXOs(err, utxos) {
