@@ -14,7 +14,6 @@ var app = angular.module('playApp', [
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/units'});
 }]);
-console.log(window)
 app.constant('digibyte', require('digibyte'));
 
 // Filters
