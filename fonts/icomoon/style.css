@@ -83,6 +83,10 @@
 	content: "\e60a";
 }
 
+.icon-clipboard:before {
+  content: "\e906";
+}
+
 .icon-double-arrow:before {
 	content: "\e60b";
 }

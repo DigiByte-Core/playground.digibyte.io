@@ -47,6 +47,10 @@
 	content: "\e604";
 }
 
+.icon-gear-solid:before {
+	content: "\e604";
+}
+
 .icon-github:before {
 	content: "\e605";
 }

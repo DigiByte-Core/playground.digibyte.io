@@ -7,7 +7,8 @@ var app = angular.module('playApp', [
   'playApp.hdkeys',
   'playApp.transaction',
   'playApp.unspent',
-  'playApp.multisig'
+  'playApp.multisig',
+	'playApp.segwit'
 ]);
 
 // Config
