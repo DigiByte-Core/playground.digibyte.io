@@ -11,7 +11,7 @@ angular.module('playApp.hdkeys', ['ngRoute'])
 
 .controller('HDKeysCtrl', function($scope, digibyte) {
 
-  $scope.digibyteURL = 'http://digibyte.io/guide/hierarchical.html';
+  $scope.digibyteURL = 'https://docs.digibyte.io/hierarchical';
   $scope.bitcoinURL = 'https://bitcoin.org/en/developer-guide#hierarchical-deterministic-key-creation';
   var privateValidPath = function(path) {
     return !!(/^[mM][']?(\/[0-9]+[']?)*[/]?$/.exec(path));

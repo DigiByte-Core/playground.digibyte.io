@@ -11,7 +11,7 @@ angular.module('playApp.multisig', ['ngRoute'])
 
 .controller('MultisigCtrl', function($scope, digibyte) {
 
-  $scope.digibyteURL = 'http://digibyte.io/guide/transaction.html#Multisig_Transactions';
+  $scope.digibyteURL = 'https://docs.digibyte.io/transaction#Multisig_Transactions';
   $scope.bitcoinURL = 'https://bitcoin.org/en/developer-guide#term-multisig';
 
   $scope.$on('networkUpdate', function() {

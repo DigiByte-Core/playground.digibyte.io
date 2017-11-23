@@ -11,7 +11,7 @@ angular.module('playApp.address', ['ngRoute'])
 
 .controller('AddressCtrl', function($scope, digibyte) {
 
-  $scope.digibyteURL = 'http://digibyte.io/guide/address.html';
+  $scope.digibyteURL = 'https://docs.digibyte.io/address';
   $scope.bitcoinURL = 'https://bitcoin.org/en/developer-guide#term-address';
 
   $scope.$on('networkUpdate', function() {

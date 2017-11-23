@@ -11,7 +11,7 @@ angular.module('playApp.transaction', ['ngRoute'])
 
 .controller('TransactionCtrl', function($scope, $rootScope, $http, digibyte) {
 
-  $scope.digibyteURL = 'http://digibyte.io/guide/transaction.html';
+  $scope.digibyteURL = 'https://docs.digibyte.io/transaction';
   $scope.bitcoinURL = 'https://bitcoin.org/en/developer-guide#transactions';
   var explorers = require('digibyte-explorers');
   var defaultLivenetAddress = 'DS5c434ap26oaerT7ECXrJtn71ukVeP3iC ';

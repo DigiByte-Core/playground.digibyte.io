@@ -16,7 +16,7 @@ angular.module('playApp.units', ['ngRoute'])
   $scope.currencies = [];
   $scope.currency = null;
   $scope.exampleCode = '';
-  $scope.digibyteURL = 'http://digibyte.io/guide/unit.html';
+  $scope.digibyteURL = 'https://digibyte.io/units';
   $scope.bitcoinURL = 'https://bitcoin.org/en/developer-guide#plain-text';
 
   function setExampleCode(value, code, fiat) {

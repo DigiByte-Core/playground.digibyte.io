@@ -14,7 +14,7 @@ angular.module('playApp.unspent', ['ngRoute'])
   var explorers = require('digibyte-explorers');
 
   var defaultLivenetAddress = 'DS5c434ap26oaerT7ECXrJtn71ukVeP3iC ';
-  $scope.digibyteURL = 'http://digibyte.io/guide/module/explorers/index.html';
+  $scope.digibyteURL = 'https://docs.digibyte.io/unspent-outputs';
   $scope.bitcoinURL = 'https://bitcoin.org/en/developer-guide#term-output';
 
   $scope.$on('networkUpdate', function() {
