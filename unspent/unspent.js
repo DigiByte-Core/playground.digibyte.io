@@ -77,7 +77,7 @@ angular.module('playApp.unspent', ['ngRoute'])
 
     template += "var explorers = require('digibyte-explorers');\n";
     template += "var client = new explorers.Insight();\n";
-    template += "client.getUnspentUtxos('" + address + "', function(err, utxos) {\n";
+    template += "client.getUtxos('" + address + "', function(err, utxos) {\n";
     template += "    UTXOs = utxos;\n";
     template += "    console.log('UTXOs:', utxos);\n";
     template += "});";
