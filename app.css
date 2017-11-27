@@ -25,6 +25,7 @@ input[type="color"],
 textarea {
   margin: 0 0 0 0
 }
+
 input[type="file"],
 input[type="checkbox"],
 input[type="radio"],
@@ -47,6 +48,7 @@ button,
 .button {
   margin: 0px 0px 0rem;
 }
+button.expand { padding: 12px !important;}
 input.ng-invalid {
   background-color: pink !important;
   border: 1px dashed #0066cc;
@@ -82,7 +84,8 @@ code {
 /* bg colors */
 
 .bg-color-black2 {
-  background-color: #3A3A3A;
+  background-color: #f7f9fa;
+  transition: background-color .25s ease-in-out;
 }
 .bg-color-red1 {
   background-color: #0066cc;
@@ -91,15 +94,13 @@ code {
   background-color: #F6F6F6;
 }
 .bg-color-white {
-  background-color: #ffffff;
+  background-color: #f7f9fa;
 }
 
 .bg-color-gray2 {
   background-color: #F1EFEF;
 }
-.bg-color-white {
-  background-color: #FFFFFF;
-}
+
 .red-test {
   background-color: #D0021B;
 }
@@ -421,8 +422,13 @@ input.nlocktime {
 
 #header {
   font-family: 'Titillium Web'!important;
-  padding: 14px 0 14px 0;
-  height: 62px;
+  padding: 4px 0 14px 0;
+  height: 110px;
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid #D8D8D8;
+  
 }
 .v-align {
   vertical-align: middle;
@@ -439,6 +445,7 @@ input.nlocktime {
 }
 #nav-hd {
   margin-bottom: 0;
+  margin-top: 25px;
 }
 #nav-hd li,
 #nav-ft li {
@@ -455,11 +462,12 @@ input.nlocktime {
 }
 #nav-hd li a,
 #nav-ft li a {
-  color: #E5E5E5;
+  color: #036;
+  font-weight: bold; 
 }
 #nav-hd li a:hover,
 #nav-ft li a:hover {
-  color: #fff;
+  color: #002352;
 }
 .docs a,
 .docs a:hover,
@@ -519,13 +527,13 @@ ul.menu {} .menu li {
 }
 .menu li a:hover,
 .menu li:hover a {
-  color: #0066cc;
+  color: #002352;
 }
 .menu li:hover {
-  background-color: #F6F6F6;
+  background-color: #f7f9fa;
 }
 .menu li a {
-  color: #000000;
+  color: #FFFFFF;
   display: block;
   width: 100%;
   padding: 15px 0 15px 25px;
@@ -533,39 +541,33 @@ ul.menu {} .menu li {
 }
 .sidebar {
   padding: 0px 0 0 0;
-  background-color: #f9f9f9;
+  background-color: #002352;
 }
 .menu li.current {
-  background-color: #FFFFFF;
+  background-color: #f7f9fa;
   border-left: 4px solid #0066cc;
+  color: #002352 !important;
+}
+.menu li.current a {
+    color: #002352 !important;
 }
 /* Buttons */
 
 .button1 {
   border-style: none;
   font-weight: bold;
-  background-color: #0066cc;
+  background-color: #002352;
   color: #FFFFFF;
   text-transform: uppercase;
   padding: 0rem 0rem 0rem;
-  -webkit-transition: 0.15s ease-out;
-  -moz-transition: 0.15s ease-out;
-  -o-transition: 0.15s ease-out;
-  transition: 0.15s ease-out;
-  -webkit-transition: 0.15s ease-out;
-  -moz-transition: 0.15s ease-out;
-  -o-transition: 0.15s ease-out;
-  transition: 0.15s ease-out;
+  border-style: solid;
+
+ 
 }
 .button1:hover {
   background-color: #0066cc !important;
   color: #FFFFFF !important;
   border-style: none;
-  -webkit-transition: background-color 300ms linear;
-  -moz-transition: background-color 300ms linear;
-  -o-transition: background-color 300ms linear;
-  -ms-transition: background-color 300ms linear;
-  transition: background-color 300ms linear;
 }
 .button1:focus {
   background-color: initial;
@@ -685,6 +687,7 @@ a.share-link {
 .white-box {
   border: 1px solid #D8D8D8;
   border-radius: .5em;
+  background-color: #FFF;
 }
 
 .white-box {} .white-box input {
@@ -845,7 +848,7 @@ a.share-link {
   width: 100%;
   height: 1120px;
   overflow-y: auto;
-  background-color: #4A4A4A;
+  background-color: #FFF;
   font-size: 1.2em;
 }
 #console::-webkit-scrollbar {
@@ -879,12 +882,12 @@ a.share-link {
 /* The current prompt text color */
 
 .jqconsole-prompt {
-  color: #0d0;
+  color: #036;
 }
 /* The command history */
 
 .jqconsole-old-prompt {
-  color: #0b0;
+  color: #8c8c8c;
   font-weight: normal;
 }
 /* The text color when in input mode. */
@@ -901,7 +904,7 @@ a.share-link {
 /* The text color of the output. */
 
 .jqconsole-output {
-  color: white;
+  color: #3d3d3d;
 }
 .jqconsole-undefined {
   color: gray;
@@ -930,7 +933,8 @@ a.share-link {
 #terminal-content {
   font-family: Monaco, "Courier New", Courier, monospace !important;
   height: 1200px;
-  background-color: #4A4A4A;
+  background-color: #FFF;
+  border-left: 1px solid #D8D8D8;
 }
 .footer {
   border-top: solid 1px #555;
